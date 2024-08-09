@@ -24,7 +24,7 @@
   gap: 30px;
   padding-top: 5px;
   letter-spacing: 0.3px;
-  list-style: none;
+  list-style: circle;
 }
 
 .header__link, .address a {
@@ -65,7 +65,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -125,6 +125,7 @@
   border: 1px solid var(--primary-color);
   padding: 12px 32px;
   color: var(--primary-color);
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
@@ -147,14 +148,16 @@
 
 .lots__card-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 32px;
+  padding-right: 24px;
+  padding-left: 24px;
   list-style: none;
 }
 
 .card-link {
-  text-decoration-color: var(--primary-color);
+  text-decoration: none;
 }
 
 .card {
@@ -163,8 +166,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 562px;
-  padding: 52px 40px 48px;
+  min-height: 562px;
+  padding: 52px 40px 44px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -185,6 +190,8 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
   text-transform: uppercase;
 }
 
@@ -267,6 +274,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 var(--padding-base);
+  padding-bottom: 88px;
 }
 
 .footer__address {
